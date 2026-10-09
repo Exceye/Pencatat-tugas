@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catatan Tugas Sekolah</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>Tugas Sekolah</h1>
+      <p id="ringkasan" class="ringkasan">Belum ada tugas</p>
+      <div class="progres" role="progressbar" aria-label="Tugas selesai" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <span id="progres-isi"></span>
+      </div>
+    </header>
+
+    <form id="form-tugas" class="form" autocomplete="off">
+      <label class="field full">
+        <span>Nama tugas</span>
+        <input id="judul" type="text" maxlength="100" placeholder="Contoh: Kerjakan soal bab 3" required>
+      </label>
+      <label class="field">
+        <span>Mata pelajaran (opsional)</span>
+        <input id="mapel" type="text" maxlength="40" placeholder="Matematika">
+      </label>
+      <label class="field">
+        <span>Tenggat (opsional)</span>
+        <input id="tenggat" type="date">
+      </label>
+      <button type="submit" class="tambah">Tambah tugas</button>
+    </form>
+
+    <nav class="filter" aria-label="Filter tugas">
