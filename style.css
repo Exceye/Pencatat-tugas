@@ -1,0 +1,37 @@
+/* Warna dan ukuran dasar. Ubah di sini untuk mengganti tema. */
+:root {
+  --latar: #e9f0fb;
+  --kertas: #ffffff;
+  --tinta: #1b2559;
+  --redup: #5d6896;
+  --garis: #d5dff3;
+  --aksen: #3a5bd9;
+  --aksen-gelap: #2b46b0;
+  --selesai: #25946a;
+  --bahaya: #d23f5a;
+  --margin: #f2a5b2; /* garis margin ala buku tulis */
+  --radius: 14px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--latar);
+  color: var(--tinta);
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.5;
+}
+
+.app {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 28px 16px 56px;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 7vw, 2.8rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
